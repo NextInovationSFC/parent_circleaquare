@@ -1,0 +1,84 @@
+html {
+    font-size: 62.5%;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Nunito','Noto Sans', sans-serif;
+    font-weight: 700;
+    background: #EBEFF1;
+}
+header{
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+}
+
+.main_parent {
+    text-align: center;
+}
+
+
+.search-result{
+    font-size: 14px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    position: relative;
+    height: 40px;
+}
+
+.search-result-text{
+    padding-top: 13px;
+    padding-left: 60px;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 979px) {
+
+    header{
+        box-shadow: none;
+    }
+
+
+    .search-result-text{
+        padding-left: 20px;
+    }
+
+    .search-result{
+        font-size: 14px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+        position: fixed;
+        height: 40px;
+        width: 100%;
+        top: 50px;
+        z-index: 1;
+    }
+
+    .main .random{
+        margin-top: 50px;
+    }
+
+}
+
+.noHit{
+    height: 500px;
+    width: 85%;
+    display: block;
+    background: url(../img/noHit_m.png) no-repeat left top;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    margin: 30px auto 0 auto;
+}
+
+@media screen and (min-width:1024px) {
+    .noHit{
+        height: 500px;
+        width: 800px;
+        display: block;
+        background: url(../img/noHit.png) no-repeat left top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        margin: 0 auto;
+    }
+
+}

@@ -1,0 +1,327 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Nunito','Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+/*---policy---*/
+
+.imageBox{
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+.imageBox img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100%;
+}
+.head_title{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    bottom: 0;
+    margin: auto;
+}
+
+.english{
+    font-size: 3rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+
+/*　モバイル（iPhone,Android）に関するCSSを記述する*/
+.about{
+    padding: 16px;
+    background-color: #ffffff;
+}
+
+.about_heading{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 24px;
+}
+
+
+
+.lineBox{
+    margin: 0 auto;
+    width: 110px;
+    margin-bottom: 24px;
+}
+.heading_line{
+    text-align: center;
+    display: inline-block;
+    width: 18%;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    height: 2.4px;
+    border: 0;
+}
+
+
+.about_description{
+    font-size: 1.5rem;
+    line-height: 30px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+
+.member_heading{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 32px;
+}
+
+
+.about_member-card{
+    display:-webkit-box;/*--- Androidブラウザ用 ---*/
+    display:-ms-flexbox;/*--- IE10 ---*/
+    display: -webkit-flex;/*--- safari（PC）用 ---*/
+    display:flex;
+    -webkit-box-pack:justify;/*--- Androidブラウザ用 ---*/
+    -ms-flex-pack:justify;/*--- IE10 ---*/
+    -webkit-justify-content:space-between;/*--- safari（PC）用 ---*/
+    justify-content:space-between;
+    webkit-box-lines:multiple;
+    -moz-box-lines:multiple;
+    -webkit-flex-wrap:wrap;
+    -moz-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.member{
+    width: 156px;
+    display: block;
+    text-decoration: none;
+}
+
+.member:hover{
+}
+.member_photo{
+    height: 120px;
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 60px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+.name{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #272727;
+}
+
+.about-circle{
+    margin-top: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color: #7b7b7b;
+}
+
+
+.about-position{
+    margin-top: 4px;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #272727;
+    margin-bottom: 32px;
+}
+
+.line{
+    display: block;
+    width: 60%;
+    height: 2.4px;
+    border: 0;  /*デフォルトデザインでは線がある場合があるので、消しておく。*/
+}
+.red {
+    background-color: #e63c6e;
+}
+.yellow {
+    background-color: #fac81e;
+}
+.green {
+    background-color: #78c850;
+}
+.blue {
+    background-color: #5ac8dc;
+}
+
+
+
+
+
+
+@media screen and (min-width:480px) {
+
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+}
+@media screen and (min-width:1024px) {
+/*
+    .imageBox{
+        overflow: hidden;
+        width: 648px;
+        height: 280px;
+        position: relative;
+        margin: 0 auto;
+    }
+    .imageBox img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: auto;
+    }
+*/
+
+    .imageBox{
+        width: 1024px;
+        height: 280px;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+    }
+    .imageBox img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: auto;
+    }
+
+    .head_title{
+        color: #ffffff;
+        text-align: center;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        line-height: 50px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 30%;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .english{
+        font-size: 3.2rem;
+    }
+
+
+
+    .about_heading{
+        margin-top: 48px;
+        font-size: 2.8rem;
+    }
+    .about{
+        padding-right: 188px;
+        padding-left: 188px;
+    }
+
+    .about_description{
+        font-size: 1.8rem;
+        line-height: 36px;
+    }
+
+
+    .about_member-card{
+        -webkit-justify-content:space-between;/*--- safari（PC）用 ---*/
+        justify-content:space-between;
+        justify-content:center;
+    }
+
+    .member{
+        width: 200px;
+        display: block;
+        text-decoration: none;
+    }
+    .member_heading{
+        margin-top: 48px;
+        font-size: 2.8rem;
+    }
+    .member_photo{
+        height: 144px;
+        width: 144px;
+        border-radius: 72px;
+    }
+    .name{
+        text-align: center;
+        font-size: 2.2rem;
+        color: #272727;
+    }
+
+    .about-circle{
+        margin-top: 8px;
+        text-align: center;
+        font-size: 1.2rem;
+        color: #7b7b7b;
+    }
+
+
+    .about-position{
+        margin-top: 8px;
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 5px;
+        color: #272727;
+        margin-bottom: 32px;
+    }
+
+    .line{
+        display: block;
+        width: 60%;
+        height: 2.4px;
+        border: 0;  /*デフォルトデザインでは線がある場合があるので、消しておく。*/
+    }
+
+}
+
+
+
+@media screen and (min-width:1175px) {
+    .member{
+        width: 240px;
+    }
+}
