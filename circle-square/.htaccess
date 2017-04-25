@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BEGIN WpFastestCache
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -80,6 +81,9 @@ FileETag None
 </IfModule>
 </FilesMatch>
 # END LBCWpFastestCache
+=======
+
+>>>>>>> d644d6dca0854e17503d9d47b82bcfbc53a05f31
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -89,6 +93,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
+<<<<<<< HEAD
 
 # END WordPress
 <IfModule mod_expires.c>
@@ -103,4 +108,15 @@ ExpiresByType application/x-javascript "access plus 1 week"
 ExpiresByType text/javascript "access plus 1 week"
 ExpiresByType application/javascript "access plus 1 week"
 ExpiresByType image/x-icon "access 1 week"
+=======
+# END WordPress
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/css "access plus 1 days"
+ExpiresByType image/gif "access plus 1 weeks"
+ExpiresByType image/jpeg "access plus 1 weeks"
+ExpiresByType image/png "access plus 1 weeks"
+ExpiresByType application/x-javascript "access plus 1 weeks"
+>>>>>>> d644d6dca0854e17503d9d47b82bcfbc53a05f31
 </IfModule>

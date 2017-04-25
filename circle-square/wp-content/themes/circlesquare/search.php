@@ -6,13 +6,13 @@
 
         <div class="search-result">
             <div class="search-result-text">
-                <?php if($s){ ?>「<?php echo (htmlspecialchars($s, ENT_QUOTES, 'UTF-8')); } ?>」の検索結果(全<?php echo $wp_query->found_posts; ?>件)
+                <?php if($s){ ?>「<?php htmlspecialchars($s, ENT_QUOTES, 'UTF-8'); } ?>」の検索結果(全<?php echo $wp_query->found_posts; ?>件)
+
             </div>
         </div>
 
         <div class="random">
             <div id="random" class="random_grid">
-                <?php query_posts('s=' . $s . '&orderby=rand');?>
                 <?php if(have_posts()):while(have_posts()):the_post(); get_template_part('each_exrpt_post');?>
                 <?php endwhile; ?>
                 <?php else : ?>
