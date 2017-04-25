@@ -1,0 +1,130 @@
+html {
+    font-size: 62.5%;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Nunito','Noto Sans', sans-serif;
+    font-weight: 700;
+    background: #F9F9F9;
+}
+header{
+    background-color: #ffffff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.main_parent {
+    text-align: center;
+}
+
+
+.search-result{
+    font-size: 14px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    position: relative;
+    height: 40px;
+}
+
+.search-result-text{
+    padding-top: 13px;
+    padding-left: 60px;
+    text-align: left;
+}
+
+.card{
+    box-sizing: border-box;
+    position: relative;
+    height: 240px;
+    width: 343px;
+    background: #ffffff;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    padding-top: 32px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    font-family: 'Nunito','Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+
+.card__heading{
+    text-align: left;
+    margin-left: 32px;
+    font-size: 3.0rem;
+}
+
+.card__description{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: left;
+    margin-top: 24px;
+    margin-left: 32px;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+
+.card__image{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 162px;
+    height: 162px;
+}
+
+
+@media screen and (max-width: 979px) {
+
+    header{
+        box-shadow: none;
+    }
+
+
+    .search-result-text{
+        padding-left: 20px;
+    }
+
+    .search-result{
+        font-size: 14px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+        position: fixed;
+        height: 40px;
+        width: 100%;
+        top: 50px;
+        z-index: 1;
+    }
+
+    .main .random{
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .card{
+        margin-top: 64px;
+        height: 248px;
+        width: 648px;
+        padding-top: 48px;
+    }
+    .card__heading{
+        margin-left: 70px;
+        font-size: 3.0rem;
+    }
+    .card__description{
+        margin-top: 24px;
+        margin-left: 70px;
+        font-size: 2.4rem;
+        line-height: 48px;
+        font-weight: bold;
+    }
+    .card__image{
+        position: absolute;
+        bottom: 0;
+        right: 70px;
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
